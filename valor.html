@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor a ser pago</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: blue;
+}
+
+.form {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 25px auto;
+    margin-top: 100px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.form h1 {
+    font-family: arial;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: arial;
+   
+}
+
+.form label {
+    font-family: arial;
+}
+
+.input1{
+    margin-top: 10px;
+}
+
+.input2{
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}
+
+.form p {
+    font-family: arial;
+}
+
+.form a {
+    text-decoration: none;
+    font-family: arial;
+    color: #000;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="form">
+        <h1>Horas a serem pagas</h1>
+        <div class="input1">
+        <label>Horas restantes a serem pagas</label>
+        <input type="number" name="valor" id="valor" placeholder="Horas a serem pagas">
+    </div>
+    <div class="input2">
+        <label>Ganho por hora</label>
+        <input type="number" name="horass" id="horass" placeholder="Horas ganha por mês">
+    </div>
+        <button onclick="multiplicar()">Calcular</button>
+        <p>O Valor a ser pago é de:</p><br>R$ <span></span> <br> <br>
+
+        
+        <a href="index.php">Saber quantos ganho por hora</a>
+
+
+    </div>
+
+        <script>
+            var salario = document.querySelector('#valor');
+            var horas = document.querySelector('#horass');
+            var resultado = document.querySelector('span');
+       
+            function multiplicar(){
+                resultado.innerHTML = salario.value * horas.value
+            }
+       
+           
+       
+           </script>
+    
+</body>
+</html>

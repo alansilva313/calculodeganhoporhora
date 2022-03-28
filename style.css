@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(horas.jpg);
+    background-position: center center;
+   background-size: 2000px;
+    background-repeat: no-repeat;
+}
+
+.form {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    margin: 25px auto;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.form h1 {
+    font-family: arial;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: arial;
+    border-radius: 5px;
+   
+}
+
+.form label {
+    font-family: arial;
+}
+
+.input1{
+    margin-top: 10px;
+}
+
+.input2{
+    margin-top: 10px;
+}
+
+.input3 {
+    margin-top: 10px;
+}
+
+
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:rgb(221, 171, 7);
+
+}
+
+.form p {
+    font-family: arial;
+    color: rgb(0, 0, 0);
+}
+
+.form span {
+    color: rgb(2, 0, 0);
+}
+
+.form a {
+    text-decoration: none;
+    font-family: arial;
+    color: #000;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.result {
+   border: 1px solid #ccc;
+}
+
+footer {
+    height: 200px;
+    background-color: #fff;
+}
+
+.text {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.text h1 {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.text a {
+    text-decoration: none;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 400px){
+    .form {
+        width: 300px;
+    }
+
+    footer {
+        
+        height: 150px;
+    }
+
+    .text {
+        padding: 15px;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+    .text a {
+        text-decoration: none;
+        color: #ccc;
+        margin-top: 10px;
+    }
+}
